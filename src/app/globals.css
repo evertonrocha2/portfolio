@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Geist:wght@100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,6 +8,7 @@
   --background: #ffffff;
   --foreground: #171717;
 }
+
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -17,5 +20,21 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Geist', Helvetica, sans-serif;
+}
+
+.frontside {
+  z-index: 99 !important;
+}
+
+.backside {
+  z-index: 1 !important;
+}
+
+.geist{
+  font-family: 'Geist', sans-serif;
+}
+
+.dm-sans{
+  font-family: 'DM-Sans', sans-serif !important;
 }
