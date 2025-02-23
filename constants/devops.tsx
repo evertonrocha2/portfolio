@@ -1,12 +1,10 @@
 import { FaCloud, FaDocker, FaGit } from "react-icons/fa";
 
 interface DevopsI {
-    id: number;
-    name: string;
-    icon: React.ReactNode;
+  id: number;
+  name: string;
+  icon: React.ReactNode;
 }
-
-
 
 export const devops: DevopsI[] = [
   {

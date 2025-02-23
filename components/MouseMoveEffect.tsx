@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { useEffect, useState } from "react";
 
 export default function MouseMoveEffect() {
@@ -21,7 +21,7 @@ export default function MouseMoveEffect() {
       className="pointer-events-none fixed inset-0 z-40 transition-opacity duration-300 blur-2xl"
       style={{
         background: `radial-gradient(300px at ${mousePosition.x}px ${mousePosition.y}px, rgba(29, 65, 141, 0.3), transparent 80%)`,
-        mixBlendMode: "difference", 
+        mixBlendMode: "difference",
       }}
     />
   );

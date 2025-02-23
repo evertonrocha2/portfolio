@@ -27,7 +27,7 @@ export const BentoGridItem = ({
   icon,
   image,
   id,
-  stacks
+  stacks,
 }: {
   className?: string;
   title?: string | React.ReactNode;
@@ -49,28 +49,31 @@ export const BentoGridItem = ({
           : "md:col-span-2",
         className
       )}
-    >     
+    >
       {image && (
         <div className="absolute top-0 right-0 w-1/2 h-full overflow-hidden">
           <img
             src={image}
             alt="Background"
             className={cn(
-              "w-full h-full object-cover transition-transform duration-200 opacity-30 scale-110 group-hover/bento:scale-105",
+              "w-full h-full object-cover transition-transform duration-200 opacity-30 scale-110 group-hover/bento:scale-105"
             )}
           />
           <div className="absolute inset-0 bg-gradient-to-l  from-transparent  via-black-100/50 to-black-100" />
         </div>
       )}
-       {stacks && (
+      {stacks && (
         <div className="absolute top-[50%] pl-2 py-2 translate-y-[-50%] transition-transform duration-200 scale-110 group-hover/bento:scale-105 right-0 w-1/2 overflow-hidden">
           <div className="flex flex-wrap gap-4 ">
-              {stacks.map((stack, i) => (
-                <div key={i} className="text-xs font-medium text-white rounded-lg px-2 py-1 bg-gradient-to-r from-purple-500 to-black-100 ">
-                  {stack}
-                </div>
-              ))}
-            </div>
+            {stacks.map((stack, i) => (
+              <div
+                key={i}
+                className="text-xs font-medium text-white rounded-lg px-2 py-1 bg-gradient-to-r from-purple-500 to-black-100 "
+              >
+                {stack}
+              </div>
+            ))}
+          </div>
           <div className="absolute inset-0 bg-gradient-to-l w-full from-transparent   via-black-100/50 to-black-100/90" />
         </div>
       )}

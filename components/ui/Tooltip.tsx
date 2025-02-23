@@ -2,7 +2,6 @@
 
 import * as TooltipPrimitive from "@radix-ui/react-tooltip";
 
-// Definindo tipos para o componente Tooltip
 export const Tooltip = ({ children }: { children: React.ReactNode }) => (
   <TooltipPrimitive.Provider>
     <TooltipPrimitive.Root delayDuration={100}>

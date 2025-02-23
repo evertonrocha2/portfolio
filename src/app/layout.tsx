@@ -3,26 +3,17 @@ import "./globals.css";
 import { ThemeProvider } from "./provider";
 import { type ReactNode } from "react";
 
-
-
-export default function RootLayout({
-  children,
-}: {
-  children: ReactNode;
-}) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-        className={`antialiased`}
-        suppressHydrationWarning
-      >
+      <body className={`antialiased`} suppressHydrationWarning>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >
-          <MouseMoveEffect/>
+          <MouseMoveEffect />
           {children}
         </ThemeProvider>
       </body>

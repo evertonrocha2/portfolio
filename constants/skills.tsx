@@ -5,9 +5,9 @@ import { IoLogoJavascript } from "react-icons/io";
 import { DiMysql } from "react-icons/di";
 
 interface SkillsI {
-    id: number;
-    name: string;
-    icon: React.ReactNode;
+  id: number;
+  name: string;
+  icon: React.ReactNode;
 }
 
 export const frontend: SkillsI[] = [
