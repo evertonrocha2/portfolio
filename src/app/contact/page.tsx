@@ -54,14 +54,14 @@ const Contact = () => {
         >
           <img src="/confetti.gif" alt="Confetti" className="w-full h-full" />
         </div>
-        <h2 className="text-3xl md:text-3xl text-center tracking-tighter">
+        <h2 className="text-3xl md:text-3xl text-white text-center tracking-tighter">
           Entre em contato comigo! 😄
         </h2>
         <form onSubmit={handleSubmit}>
           <div className="flex flex-col gap-1 my-4">
-            <label htmlFor="nome">Nome:</label>
+            <label className="text-white" htmlFor="nome">Nome:</label>
             <input
-              className="px-4 bg-black-100 border-[0.2px] border-zinc-950 py-2 rounded-xl text-sm"
+              className="px-4 bg-black-100 text-white border-[0.2px] border-zinc-950 py-2 rounded-xl text-sm"
               type="text"
               id="nome"
               name="nome"
@@ -71,9 +71,9 @@ const Contact = () => {
             />
           </div>
           <div className="flex flex-col gap-1 my-4">
-            <label htmlFor="email">Email:</label>
+            <label className="text-white" htmlFor="email">Email:</label>
             <input
-              className="px-4 bg-black-100 border-[0.2px] border-zinc-950 py-2 rounded-xl text-sm"
+              className="px-4 bg-black-100 text-white border-[0.2px] border-zinc-950 py-2 rounded-xl text-sm"
               type="email"
               id="email"
               name="email"
@@ -83,11 +83,11 @@ const Contact = () => {
             />
           </div>
           <div className="flex flex-col gap-1 my-4">
-            <label htmlFor="mensagem">Mensagem:</label>
+            <label className="text-white" htmlFor="mensagem">Mensagem:</label>
             <textarea
               id="mensagem"
               placeholder="Exemplo: Olá, gostaria de te contratar 💖"
-              className="px-4 bg-black-100 border-[0.2px] border-zinc-950 py-2 rounded-xl text-sm"
+              className="px-4 bg-black-100 border-[0.2px] text-white border-zinc-950 py-2 rounded-xl text-sm"
               name="mensagem"
               value={mensagem}
               onChange={(e) => setMensagem(e.target.value)}
@@ -95,7 +95,7 @@ const Contact = () => {
             ></textarea>
           </div>
           <button
-            className="bg-blue-500 px-4 py-2 rounded-xl text-center w-full hover:bg-blue-500/80 transition-colors duration-300"
+            className="bg-blue-500 text-white px-4 py-2 rounded-xl text-center w-full hover:bg-blue-500/80 transition-colors duration-300"
             type="submit"
           >
             Enviar
