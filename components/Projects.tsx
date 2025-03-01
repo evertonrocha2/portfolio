@@ -58,7 +58,7 @@ const Projects = () => {
         {projects.map((project, index) => (
           <motion.div
             key={index}
-            className="flex flex-col bg-white dark:bg-[#000103] border-[0.2px] border-zinc-900 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+            className="flex flex-col bg-[#000103] border-[0.2px] border-zinc-900 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -73,16 +73,16 @@ const Projects = () => {
             </div>
 
             <div className="p-6 flex-1 flex flex-col">
-              <h3 className="text-xl font-bold mb-3 text-gray-800 dark:text-white">
+              <h3 className="text-xl font-bold mb-3 text-white">
                 {project.title}
               </h3>
-              <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-4 flex-1">
+              <p className="text-gray-600 text-gray-300 text-sm leading-relaxed mb-4 flex-1">
                 {project.description}
               </p>
-              <div className="mt-auto pt-4 border-t border-zinc-900 flex items-center dark:border-zinc-900">
+              <div className="mt-auto pt-4 border-t  flex items-center border-zinc-900">
                 <a
                   href={project.href}
-                  className="text-blue-600 dark:text-blue-400 hover:underline text-sm flex items-center"
+                  className="text-blue-400 hover:underline text-sm flex items-center"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
